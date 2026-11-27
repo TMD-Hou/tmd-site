@@ -26,7 +26,7 @@
       極致全自動化系統！支援無人值守、自動登入、自動進房與全自動掛機，全程零手動，長時間運行依然穩定流暢。
     </p>
     <div class="hero-actions">
-      <a class="btn btn-line" href="https://discord.gg/nXywNBqCBM" target="_blank" rel="noopener">
+      <a class="btn btn-line" href="#" onclick="openModal(); return false;">
         <i class="fa-brands fa-discord"></i> 加入 Discord(試用・購買・加入跑殺團)
       </a>
       <a class="btn btn-ghost" href="#downloads">
@@ -125,51 +125,37 @@
   </footer>
 </div>
 
-<!-- 入群規範彈出視窗 -->
+<!-- 加入 Discord 前先看(11/26) -->
 <div class="modal-overlay" id="rulesModal">
   <div class="modal-card">
     <div class="modal-header">
       <div class="modal-title">
-        <i class="fa-solid fa-circle-exclamation" style="color: var(--amber);"></i> TMD 24H 專屬跑殺房規範
+        <i class="fa-solid fa-book-open" style="color: var(--amber);"></i> 加入 Discord 前先看
       </div>
       <button class="modal-close" type="button" onclick="closeModal()" aria-label="關閉"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <div class="modal-body">
-      <p>為確保房間秩序，請務必遵守以下規範，並於入群後在記事本留下您的遊戲 ID：</p>
+      <div class="highlight-box">TMD 提供 <strong>自動跑殺</strong>、<strong>自動掛機</strong>。<br>試用、購買、教學、客服 <strong>全部在 Discord</strong>。</div>
 
-      <div class="rules-title">一、入群必須執行事項</div>
+      <div class="rules-title">進 Discord 後照這 4 步</div>
       <ul class="rules-list">
-        <li>
-          <strong>進群第一步：請立即修改社群名稱</strong>
-          <div class="highlight-box">
-            🔸 命名格式：<code>ᵀᴹᴰ.您的名字</code><br>
-            🔸 範例：<code>ᵀᴹᴰ.XXX</code>
-          </div>
-        </li>
-        <li>
-          <strong>於社群記事本留言區留下資訊：</strong>
-          <div class="highlight-box">
-            🔸 遊戲ID：<br>
-            🔸 社群名稱：ᵀᴹᴰ.您的名字
-          </div>
-        </li>
+        <li>到「📝新人報到」按〔開始報到〕</li>
+        <li>選你要的:🔵 <strong>加入 TMD 跑殺團</strong> 或 🟢 <strong>自己開房/掛機</strong></li>
+        <li>照機器人的按鈕一步一步做(🔵 要加入 TMD 的 LINE 社群,機器人會給你連結)</li>
+        <li>完成後就能領試用、看方案、問客服</li>
       </ul>
 
-      <div class="rules-title">二、掛機規範說明</div>
+      <div class="rules-title">注意</div>
       <ul class="rules-list">
-        <li><strong>掛機地點：</strong>金六結 5 分流</li>
-        <li><strong>人數規範：</strong>請盡量維持紅藍隊人數平均。違規將直接移除，不另行通知。</li>
-      </ul>
-
-      <div class="rules-title">三、其他提醒</div>
-      <ul class="rules-list">
-        <li><strong>嚴禁外流</strong>社群密碼。違規將直接處理。</li>
+        <li>⏰ 請在 <strong>24 小時內</strong>完成報到,沒完成會被移出,要再從官網重新進來。</li>
+        <li>💬 有問題在 Discord 按〔🆘 我有問題〕,<strong>不用私訊管理員</strong>。</li>
+        <li><strong>嚴禁分享或轉賣 Key</strong>,違規會停用。</li>
       </ul>
     </div>
     <div class="modal-footer">
       <label class="agree">
         <input type="checkbox" id="agreeCheck" onchange="toggleJoinBtn()">
-        我已閱讀並同意遵守上述所有規範
+        我看完了
       </label>
       <a href="https://discord.gg/nXywNBqCBM"
          id="joinBtn" class="btn btn-line btn-join" target="_blank" rel="noopener">
@@ -178,7 +164,6 @@
     </div>
   </div>
 </div>
-
 <script src="app.js"></script>
 </body>
 </html>
